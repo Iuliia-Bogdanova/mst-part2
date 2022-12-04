@@ -1,0 +1,43 @@
+html {
+    background-image: url(./img/wall.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 10vh;
+    background-color: rgb(249, 3, 44);
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 15px;
+}
+
+.card {
+    width: 30vw;
+    padding: 10px;
+    padding-bottom: 35px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+    margin: 10px;
+}
+
+#cardsContainer {
+    width: 100vw;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+}
