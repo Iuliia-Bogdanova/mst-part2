@@ -5,36 +5,62 @@ import Avenger from './components/Avenger';
 import "./components/Avenger.css";
 
 const avengers = [
-  { 
-    name: "Tony Stark", 
-    src: "../../public/img/Stark.jpg", alt: "Iron Man", 
-    superpowers: "intelligence"
-  }
-  ,
   {
+    character: "Iron Man",
+    src: "./img/Stark.jpg",
+    alt: "Iron Man",
+    name: "Tony Stark",
+    superpowers: "intelligence",
+  },
+  {
+    character: "Captain America",
+    src: "./img/Cap.jpg",
+    alt: "Captain America",
     name: "Stephen Rogers",
-    src: "../../public/img/Cap.jpg", alt: "Captain America",
-    superpowers: "strength, endurance, regeneration"
-  }
-  ,
+    superpowers: "strength, endurance, regeneration",
+  },
   {
+    character: "Black Widow",
+    src: "./img/Natasha.jpg",
+    alt: "Black Widow",
     name: "Natasha Romanoff",
-    src: "../../public/img/Natasha.jpg", alt: "Black Widow",
-    superpowers: "spy"
-  }
+    superpowers: "spy",
+  },
+  {
+    character: "Thor",
+    src: "./img/Thor.jpg",
+    alt: "Thor",
+    name: "Thor",
+    superpowers: "the power of a god, the hammer Mjolnir",
+  },
+  {
+    character: "Hulk",
+    src: "./img/Banner.jpg",
+    alt: "Hulk",
+    name: "Bruce Banner",
+    superpowers: "intelligence, superhuman strength, flight",
+  },
+  {
+    character: "Hawkeye",
+    src: "./img/Hawkeye.jpg",
+    alt: "Hawkeye",
+    name: "Clint Barton",
+    superpowers: "great shooter, Natasha's best friend",
+  },
 ];
 
 class App extends React.Component {
   render() {
   return (
     <div className="App">
-      {
-        avengers.map((avenger) =>
-        <Avenger name={avenger.name} 
-        src={avenger.src} alt={avenger.alt}
-        superpowers={avenger.superpowers}/>
-        )
-      }
+      {avengers.map((avenger) => (
+        <Avenger
+          character={avenger.character}
+          src={avenger.src} alt={avenger.alt}
+          name={avenger.name}
+          superpowers={avenger.superpowers}
+        />
+      ))}
     </div>
   );
   }
