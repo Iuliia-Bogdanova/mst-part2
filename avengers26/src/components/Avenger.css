@@ -1,0 +1,35 @@
+.App {
+    background-image: url(../../public/img/wall.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.avenger-card {
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+}
+
+.avenger-card img {
+    width: 100%;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.avenger-name {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.superpowers {
+    font-size: large;
+    margin-top: 15px;
+}
+
+.avenger-card button {
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    margin-top: 15px;
+}
