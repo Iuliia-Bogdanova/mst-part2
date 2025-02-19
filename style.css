@@ -45,11 +45,9 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  /* clip-path: circle(50%); */
 }
 
 .text {
-  /* display: inline-block; */
   position: relative;
   width: 94%;
   margin: 0 3%;
@@ -60,16 +58,25 @@ video {
   color: #f2f2f1;
 }
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
 span {
   display: inline-block;
   position: relative;
   height: 0.5em; 
-  /* background: transparent; */
-  /* color: transparent; */
   border: 1px solid white;
-  /* clip-path: circle(50%); */
-  
 }
+
+
 
 .span-1 {
   width: 42%;
